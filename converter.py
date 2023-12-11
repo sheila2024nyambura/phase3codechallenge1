@@ -7,4 +7,7 @@ def convert_to_24_hour(hour, minutes, time_period):
     elif time_period == 'am' and hour == 12:
         hour = 0
 
-    
+    formatted_hour = f"{hour:02}"
+    formatted_minutes = f"{minutes:02}"
+
+    return formatted_hour + formatted_minutes
