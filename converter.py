@@ -11,3 +11,7 @@ def convert_to_24_hour(hour, minutes, time_period):
     formatted_minutes = f"{minutes:02}"
 
     return formatted_hour + formatted_minutes
+
+print(convert_to_24_hour(1, 20, "am")) # Output 0120
+print(convert_to_24_hour(4, 00, "am")) # Output 0400
+print(convert_to_24_hour(12, 15, "am")) # Output 0015
